@@ -135,7 +135,7 @@ window.QR_EN = {
 
     /* 05 reels */
     t94: 'Try a lesson <em>right now.</em>',
-    t95: 'Hover and the video comes alive. Click for sound. Drag the strip sideways.',
+    t95: "Tap or click a video to watch it with sound. Swipe or drag the strip sideways.",
     t96: 'even more lessons on Instagram',
     t97: 'Next stop: plans →',
 

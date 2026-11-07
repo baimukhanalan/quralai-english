@@ -505,7 +505,7 @@ section { position: relative; }
 }
 .bubble:hover { transform: translateY(-6px) rotate(-.6deg); box-shadow: 0 30px 50px -35px rgba(22,22,26,.45); }
 .bubble blockquote { margin: 0 0 .7rem; font-family: var(--serif); font-size: 1.45rem; line-height: 1.15; letter-spacing: -.01em; }
-.bubble__tr { margin: 0 0 .8rem; color: var(--ink-3); font-size: .9rem; }
+.bubble__tr { margin: 0 0 .8rem; color: var(--ink-2); font-size: .9rem; }
 .bubble figcaption { color: var(--ink-3); font-size: .62rem; }
 .bubble--b { background: var(--sky); border-color: transparent; border-radius: 22px 22px 6px 22px; }
 .bubble--c { background: var(--ink); color: var(--paper); border-color: var(--ink); }
