@@ -775,7 +775,7 @@ section { position: relative; }
   .contact__lead { font-size: clamp(1.75rem, 7.6vw, 2rem); }
 
   /* --- body copy ≥16px --- */
-  .hero__sub, .sec-head__aside, .path__lede, .lab__copy > p, .principle p, .acc__body p { font-size: 1.0625rem; line-height: 1.55; }
+  .hero__sub, .sec-head__aside, .path__lede, .lab__copy > p:not(.mono), .principle p, .acc__body p { font-size: 1.0625rem; line-height: 1.55; }
   .rcard__d, .tcard p, .pass ul { font-size: 1rem; line-height: 1.45; }
   .rcard__d { margin-right: 56px; } /* clears the 40px .rcard__go arrow */
   .case__quote { font-size: 1.4rem; }
