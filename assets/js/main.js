@@ -118,6 +118,7 @@
   const countEl = $('.loader__count');
 
   const curtain = $('.curtain');
+  gsap.set(curtain, { y: 0, yPercent: 0 });
   function intro(withLoader = true) {
     const tl = gsap.timeline({
       onComplete: () => {
@@ -126,9 +127,9 @@
         ScrollTrigger.refresh();
       },
     });
-    if (withLoader) tl.set(curtain, { yPercent: -100 }).to(loader, { yPercent: -100, duration: 1, ease: 'expo.inOut' }).set(loader, { display: 'none' });
-    else tl.to(curtain, { yPercent: -100, duration: .9, ease: 'expo.inOut' });
-    tl.from('.hero__word .c', { yPercent: 115, rotate: 7, opacity: 0, duration: 1.2, ease: 'expo.out', stagger: 0.05 }, '-=.45')
+    if (withLoader) tl.set(curtain, { yPercent: -100 }).to(loader, { yPercent: -100, duration: .7, ease: 'expo.inOut' }).set(loader, { display: 'none' });
+    else tl.to(curtain, { yPercent: -100, duration: .7, ease: 'expo.inOut' });
+    tl.from('.hero__word .c', { yPercent: 115, rotate: 7, opacity: 0, duration: 1, ease: 'expo.out', stagger: 0.04 }, '-=.4')
       .from('.hero__oval', { clipPath: 'inset(100% 0 0 0 round 999px)', duration: 1.3, ease: 'expo.out' }, '<.1')
       .fromTo('.hero__oval img', { scale: 1.5 }, { scale: 1.04, duration: 1.6, ease: 'expo.out' }, '<')
       .from('.hero__ring', { opacity: 0, scale: .7, duration: 1.2, ease: 'expo.out' }, '<.2')
@@ -144,7 +145,7 @@
   try { seen = sessionStorage.getItem('qr-seen') === '1'; sessionStorage.setItem('qr-seen', '1'); } catch (e) {}
   function pageIn() {
     gsap.to(curtain, {
-      yPercent: -100, duration: .95, ease: 'expo.inOut', delay: .05,
+      yPercent: -100, duration: .7, ease: 'expo.inOut',
       onStart: () => { document.body.classList.remove('is-loading'); },
       onComplete: () => { lenis?.start(); ScrollTrigger.refresh(); },
     });
@@ -157,22 +158,24 @@
   } else {
     let gi = 0;
     const cnt = { v: 0 };
-    gsap.to(cnt, { v: 100, duration: 1.75, ease: 'power2.inOut', onUpdate: () => { countEl.textContent = String(Math.round(cnt.v)).padStart(2, '0'); } });
+    gsap.to(cnt, { v: 100, duration: 1.15, ease: 'power2.inOut', onUpdate: () => { countEl.textContent = String(Math.round(cnt.v)).padStart(2, '0'); } });
     const cycle = () => {
       gi++;
-      if (gi >= greetings.length) { setTimeout(intro, 140); return; }
+      if (gi >= greetings.length) { intro(); return; }
       gsap.fromTo(greetEl, { yPercent: 100, opacity: 0 }, { yPercent: 0, opacity: 1, duration: .22, ease: 'power3.out', onStart: () => { greetEl.textContent = greetings[gi]; } });
-      setTimeout(cycle, gi === greetings.length - 1 ? 420 : 230);
+      setTimeout(cycle, gi === greetings.length - 1 ? 220 : 140);
     };
-    const start = () => setTimeout(cycle, 260);
-    if (document.fonts && document.fonts.ready) document.fonts.ready.then(start); else start();
+    let started = false;
+    const start = () => { if (started) return; started = true; setTimeout(cycle, 100); };
+    if (document.fonts && document.fonts.ready) document.fonts.ready.then(start);
+    setTimeout(start, 450);
   }
 
   /* safety: never leave the curtain/loader up (e.g. page loaded in a background tab) */
   setTimeout(() => {
     if (!document.body.classList.contains('is-loading')) return;
     document.body.classList.remove('is-loading');
-    gsap.set(curtain, { yPercent: -100 }); if (loader) loader.style.display = 'none';
+    gsap.set(curtain, { y: 0, yPercent: -100 }); if (loader) loader.style.display = 'none';
     lenis?.start(); ScrollTrigger.refresh();
   }, 4500);
 
@@ -186,7 +189,7 @@
     e.preventDefault();
     closeMenu();
     if (reduce) { location.href = href; return; }
-    gsap.fromTo(curtain, { yPercent: 100 }, { yPercent: 0, duration: .6, ease: 'expo.in', onComplete: () => { location.href = href; } });
+    gsap.fromTo(curtain, { y: 0, yPercent: 100 }, { yPercent: 0, duration: .5, ease: 'expo.in', onComplete: () => { location.href = href; } });
   });
   addEventListener('pageshow', (e) => { if (e.persisted) gsap.set(curtain, { yPercent: -100 }); });
 

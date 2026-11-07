@@ -756,7 +756,7 @@ section { position: relative; }
   /* --- vertical rhythm: s4 top + s4 bottom left ~220px dead gaps between sections --- */
   .route, .path, .method, .cases, .reviews, .reels, .formats, .faq { padding: var(--s3) 0; }
   body.subpage main > section:first-child { padding-top: var(--s1); }
-  .contact { padding-top: var(--s3); }
+  .contact { padding-top: var(--s2); }
   .sec-head { margin-bottom: var(--s2); }
   .next { margin-top: var(--s2); min-height: 44px; font-size: .75rem; }
   .foot { margin-top: var(--s2); padding-top: var(--s1); gap: var(--s-1) var(--s1); }
@@ -792,8 +792,8 @@ section { position: relative; }
   .case__facts span, .case__quote .mono, .bubble figcaption, .reel__meta span, .reel__likes,
   .pass__route small, .pass__price span, .chip b, .viewer__title, .vmodal__ig, .tcard--end .next { font-size: .6875rem; }
   .case__facts span, .pass__route small, .pass__price span { letter-spacing: .07em; }
-  .float--stamp { width: 104px; }
-  .float--stamp .mono { font-size: .6875rem; line-height: 1.2; letter-spacing: .03em; }
+  .float--stamp { width: 110px; }
+  .float--stamp .mono { font-size: .6875rem; line-height: 1.2; letter-spacing: 0; }
 
   /* --- tap targets ≥44px --- */
   .acc__item summary i { flex: 0 0 44px; height: 44px; }
@@ -802,5 +802,7 @@ section { position: relative; }
   /* --- card padding / layout --- */
   .path__pin { gap: var(--s0); }
   .principle { gap: var(--s0); }
-  .case__facts li { grid-template-columns: 6.8rem 1fr; }
+  .case__facts li { grid-template-columns: 6.4rem 1fr; }
+  .method__grid { gap: var(--s2); }
+  .lab { margin-top: var(--s3); }
 }
