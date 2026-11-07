@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="en" data-lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Quralai — American English coach</title>
+<meta name="description" content="Құралай Рапилбекова — преподаватель американского английского. 1300+ учеников по всему миру, 80% урока — живая речь. Консультации, потоки, индивидуальные занятия онлайн.">
+<meta property="og:title" content="Quralai — American English coach">
+<meta property="og:description" content="Американский английский, на котором вы наконец заговорите. 1300+ учеников, 7 языков, онлайн по всему миру.">
+<meta property="og:image" content="assets/img/hero-portrait.webp">
+<meta name="theme-color" content="#F4F0E8">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='32' fill='%2316161A'/%3E%3Ctext x='32' y='44' text-anchor='middle' font-family='Georgia' font-style='italic' font-size='38' fill='%23F4F0E8'%3EQ%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&family=Cormorant:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&family=JetBrains+Mono:wght@400;500&family=Onest:wght@400;500;600&display=swap" rel="stylesheet">
+<script src="assets/js/hide-netlify-badge.js"></script>
+<link rel="stylesheet" href="assets/css/style.css?v=8">
+</head>
+<body class="is-loading subpage">
+<span id="page-top"></span>
+<div class="curtain" aria-hidden="true"><span class="curtain__word serif-i">Quralai</span></div>
+
+
+<!-- ============ PRELOADER: greetings ============ -->
+<div class="loader" aria-hidden="true">
+  <div class="loader__word"><span data-greet>Сәлем</span></div>
+  <div class="loader__meta mono"><span>Boarding</span><span class="loader__count">00</span></div>
+</div>
+
+<!-- ============ CURSOR ============ -->
+<div class="cursor" aria-hidden="true">
+  <div class="cursor__ring">
+    <svg class="cursor__orbit" viewBox="0 0 120 120"><defs><path id="orbitPath" d="M60,60 m-46,0 a46,46 0 1,1 92,0 a46,46 0 1,1 -92,0"/></defs><text><textPath href="#orbitPath">hello · сәлем · привет · bonjour · hola · hello · сәлем ·</textPath></text></svg>
+    <span class="cursor__label"></span>
+  </div>
+  <div class="cursor__dot"></div>
+</div>
+
+<!-- ============ BACKGROUND GLOBE ============ -->
+<div class="globe" aria-hidden="true"><canvas id="globe"></canvas></div>
+<div class="grain" aria-hidden="true"></div>
+
+<!-- ============ NAV ============ -->
+<header class="nav">
+  <a href="index.html" class="nav__logo" data-cursor="наверх"><span class="serif-i">Quralai</span><sup class="mono">EN-US</sup></a>
+  <nav class="nav__links" aria-label="Разделы">
+    <a data-i18n="t0" href="path.html" data-n="01">Путь</a>
+    <a data-i18n="t1" href="method.html" data-n="02">Метод</a>
+    <a data-i18n="t2" class="is-active" href="cases.html" data-n="03">Кейсы</a>
+    <a data-i18n="t3" href="reviews.html" data-n="04">Отзывы</a>
+    <a href="reels.html" data-n="05">Reels</a>
+    <a data-i18n="t4" href="formats.html" data-n="06">Форматы</a>
+    <a href="faq.html" data-n="07">FAQ</a>
+  </nav>
+  <div class="lang" role="group" aria-label="Language"><button data-lang="en" class="is-on" aria-pressed="true">EN</button><button data-lang="ru" aria-pressed="false">RU</button><button data-lang="kz" aria-pressed="false">KZ</button><i class="lang__pill" aria-hidden="true"></i></div>
+  <a class="btn btn--ink btn--sm nav__cta magnetic" href="https://wa.me/77477490495?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5%2C%20%D0%9A%D1%83%D1%80%D0%B0%D0%BB%D0%B0%D0%B9!%20%D0%A5%D0%BE%D1%87%D1%83%20%D0%B7%D0%B0%D0%BF%D0%B8%D1%81%D0%B0%D1%82%D1%8C%D1%81%D1%8F%20%D0%BD%D0%B0%20%D0%BA%D0%BE%D0%BD%D1%81%D1%83%D0%BB%D1%8C%D1%82%D0%B0%D1%86%D0%B8%D1%8E" target="_blank" rel="noopener" data-cursor="WhatsApp"><span class="roll"><span data-i18n="t5">Записаться</span><span data-i18n="t5">Записаться</span></span><i class="arr">↗</i></a>
+  <button class="nav__burger" aria-label="Меню" aria-expanded="false"><span></span><span></span></button>
+  <!-- flight progress -->
+  <div class="flight" aria-hidden="true">
+    <div class="flight__track"><div class="flight__fill"></div></div>
+    <svg class="flight__plane" viewBox="0 0 24 24"><path d="M21 16v-2l-8-5V3.5a1.5 1.5 0 0 0-3 0V9l-8 5v2l8-2.5V19l-2 1.5V22l3.5-1 3.5 1v-1.5L13 19v-5.5z"/></svg>
+  </div>
+</header>
+<div class="menu" aria-hidden="true">
+  <a data-i18n="t0" href="path.html">Путь</a><a data-i18n="t1" href="method.html">Метод</a><a data-i18n="t2" href="cases.html">Кейсы</a><a data-i18n="t3" href="reviews.html">Отзывы</a><a href="reels.html">Reels</a><a data-i18n="t4" href="formats.html">Форматы</a><a href="faq.html">FAQ</a>
+  <a class="menu__wa" href="https://wa.me/77477490495" target="_blank" rel="noopener">WhatsApp ↗</a>
+</div>
+
+<main id="smooth">
+<!-- ================================================= 03 CASES -->
+<section class="cases" id="cases" data-globe="cases">
+  <div class="wrap">
+    <div class="sec-head sec-head--split">
+      <div>
+        <div class="stop mono"><span class="stop__n">Stop 03 / 08</span><span data-i18n="t2">Кейсы</span></div>
+        <h2 data-i18n="t60" class="h2 reveal-lines">Не обещания — <em data-i18n="t83">результаты</em> учеников.</h2>
+      </div>
+      <p data-i18n="t61" class="sec-head__aside">Скриншоты из моих сторис, без ретуши. Нажмите на карточку — откроется как в Instagram.</p>
+    </div>
+
+    <ul class="proof">
+      <li><b class="serif-i">+1</b><span data-i18n="c01">уровень за месяц</span></li>
+      <li><b class="serif-i">A2<i>→</i>B2</b><span data-i18n="c02">за 2 месяца</span></li>
+      <li><b class="serif-i">7.0</b><span>IELTS Speaking</span></li>
+      <li><b class="serif-i">50/50</b><span data-i18n="c03">ЕНТ — автоматом по IELTS</span></li>
+    </ul>
+
+    <div class="case-list">
+      <article class="case" data-story="ielts" data-cursor="открыть">
+        <div class="case__metric"><span class="mono">IELTS · Speaking</span><b class="serif-i">7.0</b></div>
+        <div class="case__body">
+          <h3 data-i18n="c10">Speaking 7.0 за один месяц</h3>
+          <ul class="case__facts mono"><li data-i18n="c11"><span>Срок</span>1 месяц</li><li data-i18n="c12"><span>Формат</span>индивидуально, 5 уроков в неделю</li><li><span>Overall</span>6.0 · S 7.0 · L 6.0 · W 6.0 · R 5.5</li><li data-i18n="c13"><span>Бонус</span>50/50 на ЕНТ — автоматом</li></ul>
+          <p class="case__quote" data-i18n="c14">«Теперь на ЕНТ — 50/50 автоматом. Разве не классно?» <span class="mono">из моих сторис</span></p>
+        </div>
+        <div class="case__shots"><img src="assets/img/stories/ielts-4.webp" alt="IELTS: Overall 6.0, Speaking 7.0" loading="lazy"><img src="assets/img/stories/ielts-2.webp" alt="Результат IELTS: Speaking 7.0" loading="lazy"></div>
+      </article>
+
+      <article class="case" data-story="levels" data-cursor="открыть">
+        <div class="case__metric"><span class="mono" data-i18n="c20">Уровень · 1 месяц</span><b class="serif-i">A2<i>→</i>B1</b></div>
+        <div class="case__body">
+          <h3 data-i18n="c21">Один месяц — один уровень</h3>
+          <ul class="case__facts mono"><li data-i18n="c22"><span>Срок</span>1 месяц, у некоторых — 3 недели</li><li data-i18n="c23"><span>Проверка</span>тест уровня → B1 Intermediate</li><li data-i18n="c24"><span>Фишка</span>каждый день напоминаю: «учитесь!»</li></ul>
+          <p class="case__quote" data-i18n="c25">«А у нас ученики проходят целый уровень за месяц». <span class="mono">из моих сторис</span></p>
+        </div>
+        <div class="case__shots"><img src="assets/img/stories/res-b1.webp" alt="Тест уровня: B1 Intermediate" loading="lazy"><img src="assets/img/stories/res-3weeks.webp" alt="Результат за 3 недели" loading="lazy"></div>
+      </article>
+
+      <article class="case" data-story="results" data-cursor="открыть">
+        <div class="case__metric"><span data-i18n="t67" class="mono">Уровень</span><b class="serif-i">A2<i>→</i>B2</b></div>
+        <div class="case__body">
+          <h3 data-i18n="t68">С A2 до B2 за два месяца</h3>
+          <ul class="case__facts mono"><li data-i18n="t69"><span>Срок</span>2 месяца</li><li data-i18n="t70"><span>Акцент</span>американский</li><li data-i18n="t71"><span>Фишка</span>техника быстрого говорения</li></ul>
+          <p data-i18n="t72" class="case__quote">«Посмотрите, как говорит моя ученица — с американским акцентом». <span class="mono">из моих сторис</span></p>
+        </div>
+        <div class="case__shots"><img src="assets/img/stories/res-2levels.webp" alt="2 месяца — 2 уровня: A2 → B2" loading="lazy"><img src="assets/img/stories/res-a2b2.webp" alt="Ученица: точка А — A2, точка B — B2" loading="lazy"></div>
+      </article>
+
+      <article class="case" data-story="zero" data-cursor="открыть">
+        <div class="case__metric"><span class="mono" data-i18n="c30">С нуля</span><b class="serif-i">Day 1</b></div>
+        <div class="case__body">
+          <h3 data-i18n="c31">С нуля — говорит с первого дня</h3>
+          <ul class="case__facts mono"><li data-i18n="c32"><span>Принцип</span>говорить с первого урока</li><li data-i18n="c33"><span>Формат</span>30-дневный челлендж</li><li data-i18n="c34"><span>День 7</span>речь уже заметно лучше</li></ul>
+          <p class="case__quote" data-i18n="c35">«С нуля сразу заговорила. Мой принцип — говорить и заставлять говорить с первого дня». <span class="mono">из моих сторис</span></p>
+        </div>
+        <div class="case__shots"><img src="assets/img/stories/res-zero.webp" alt="Ученица с нуля говорит на английском" loading="lazy"><img src="assets/img/stories/res-challenge.webp" alt="30-дневный челлендж, день 7" loading="lazy"></div>
+      </article>
+
+      <article class="case" data-story="lessons" data-cursor="открыть">
+        <div class="case__metric"><span class="mono">Поток</span><b data-i18n="t73" class="serif-i">30<small>слов</small></b></div>
+        <div class="case__body">
+          <h3 data-i18n="t74">Месяц в потоке — и уже говорят</h3>
+          <ul class="case__facts mono"><li data-i18n="t75"><span>Формат</span>группа в Zoom</li><li data-i18n="t76"><span>Каждый урок</span>новые слова + speaking</li><li data-i18n="t77"><span>Домашка</span>тетради и голосовые</li></ul>
+          <p data-i18n="t78" class="case__quote">«Записала около 30 слов по прошлым темам и новые с урока. С предложениями уже становится легче». <span class="mono">студентка потока</span></p>
+        </div>
+        <div class="case__shots"><img src="assets/img/stories/lesson-2.webp" alt="Домашние задания студентов потока" loading="lazy"><img src="assets/img/stories/lesson-1.webp" alt="Урок в Zoom" loading="lazy"></div>
+      </article>
+    </div>
+
+    <a data-i18n="t79" href="reviews.html" class="next mono" data-cursor="дальше">Следующая остановка: отзывы →</a>
+  </div>
+</section>
+
+<!-- ================================================= 08 CONTACT -->
+<section class="contact" id="contact" data-globe="contact">
+  <div class="wrap">
+    <div class="stop mono"><span class="stop__n">Stop 08 / 08</span><span data-i18n="t146">Пункт назначения</span></div>
+    <h2 class="contact__title"><span class="split-chars">Let’s</span> <em class="split-chars">talk.</em></h2>
+    <div class="contact__row">
+      <p data-i18n="t147" class="contact__lead">Первый шаг — одно сообщение. Остальное беру на себя: уровень, план, акцент.</p>
+      <a class="contact__orb magnetic" href="https://wa.me/77477490495?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5%2C%20%D0%9A%D1%83%D1%80%D0%B0%D0%BB%D0%B0%D0%B9!" target="_blank" rel="noopener" data-cursor="написать">
+        <svg viewBox="0 0 200 200" aria-hidden="true"><defs><path id="orbPath" d="M100,100 m-80,0 a80,80 0 1,1 160,0 a80,80 0 1,1 -160,0"/></defs><text><textPath href="#orbPath">WRITE ME ✦ ЖАЗЫҢЫЗ ✦ НАПИШИТЕ ✦ WRITE ME ✦ </textPath></text></svg>
+        <span>WhatsApp</span>
+      </a>
+    </div>
+  </div>
+  <footer class="foot wrap mono">
+    <span>© 2026 Quralai Rapilbekova · American English</span>
+    <span class="foot__links"><a href="https://www.instagram.com/rapilbekova_qr/" target="_blank" rel="noopener">Instagram</a><a href="https://wa.me/77477490495" target="_blank" rel="noopener">WhatsApp</a><a data-i18n="t148" href="#page-top">Наверх ↑</a></span>
+  </footer>
+</section>
+
+</main>
+
+<!-- ============ STORY VIEWER ============ -->
+<div class="viewer" id="viewer" aria-hidden="true" role="dialog" aria-label="Сторис">
+  <div class="viewer__bg" data-close></div>
+  <div class="viewer__card">
+    <div class="viewer__bars"></div>
+    <div class="viewer__head"><span class="viewer__avatar"><img src="assets/img/reels/DepjRBNNou3.webp" alt=""></span><b>rapilbekova_qr</b><span class="viewer__title mono"></span><button class="viewer__x" data-close aria-label="Закрыть">✕</button></div>
+    <img class="viewer__img" alt="">
+    <button class="viewer__prev" aria-label="Назад"></button><button class="viewer__next" aria-label="Вперёд"></button>
+  </div>
+</div>
+
+<!-- ============ VIDEO MODAL ============ -->
+<div class="vmodal" id="vmodal" aria-hidden="true" role="dialog" aria-label="Видео">
+  <div class="vmodal__bg" data-close></div>
+  <div class="vmodal__card">
+    <video controls playsinline></video>
+    <div class="vmodal__meta"><span class="vmodal__title serif-i"></span><a data-i18n="t149" class="mono vmodal__ig" target="_blank" rel="noopener">Открыть в Instagram ↗</a></div>
+    <button class="vmodal__x" data-close aria-label="Закрыть">✕</button>
+  </div>
+</div>
+
+<script src="assets/js/vendor/gsap.min.js"></script>
+<script src="assets/js/vendor/ScrollTrigger.min.js"></script>
+<script src="assets/js/vendor/lenis.min.js"></script>
+<script src="assets/js/i18n-en.js?v=8"></script>
+<script src="assets/js/i18n.js?v=8"></script>
+<script src="assets/js/main.js?v=8"></script>
+</body>
+</html>

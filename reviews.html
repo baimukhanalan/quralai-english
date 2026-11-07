@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="en" data-lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Quralai — American English coach</title>
+<meta name="description" content="Құралай Рапилбекова — преподаватель американского английского. 1300+ учеников по всему миру, 80% урока — живая речь. Консультации, потоки, индивидуальные занятия онлайн.">
+<meta property="og:title" content="Quralai — American English coach">
+<meta property="og:description" content="Американский английский, на котором вы наконец заговорите. 1300+ учеников, 7 языков, онлайн по всему миру.">
+<meta property="og:image" content="assets/img/hero-portrait.webp">
+<meta name="theme-color" content="#F4F0E8">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='32' fill='%2316161A'/%3E%3Ctext x='32' y='44' text-anchor='middle' font-family='Georgia' font-style='italic' font-size='38' fill='%23F4F0E8'%3EQ%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&family=Cormorant:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&family=JetBrains+Mono:wght@400;500&family=Onest:wght@400;500;600&display=swap" rel="stylesheet">
+<script src="assets/js/hide-netlify-badge.js"></script>
+<link rel="stylesheet" href="assets/css/style.css?v=8">
+</head>
+<body class="is-loading subpage">
+<span id="page-top"></span>
+<div class="curtain" aria-hidden="true"><span class="curtain__word serif-i">Quralai</span></div>
+
+
+<!-- ============ PRELOADER: greetings ============ -->
+<div class="loader" aria-hidden="true">
+  <div class="loader__word"><span data-greet>Сәлем</span></div>
+  <div class="loader__meta mono"><span>Boarding</span><span class="loader__count">00</span></div>
+</div>
+
+<!-- ============ CURSOR ============ -->
+<div class="cursor" aria-hidden="true">
+  <div class="cursor__ring">
+    <svg class="cursor__orbit" viewBox="0 0 120 120"><defs><path id="orbitPath" d="M60,60 m-46,0 a46,46 0 1,1 92,0 a46,46 0 1,1 -92,0"/></defs><text><textPath href="#orbitPath">hello · сәлем · привет · bonjour · hola · hello · сәлем ·</textPath></text></svg>
+    <span class="cursor__label"></span>
+  </div>
+  <div class="cursor__dot"></div>
+</div>
+
+<!-- ============ BACKGROUND GLOBE ============ -->
+<div class="globe" aria-hidden="true"><canvas id="globe"></canvas></div>
+<div class="grain" aria-hidden="true"></div>
+
+<!-- ============ NAV ============ -->
+<header class="nav">
+  <a href="index.html" class="nav__logo" data-cursor="наверх"><span class="serif-i">Quralai</span><sup class="mono">EN-US</sup></a>
+  <nav class="nav__links" aria-label="Разделы">
+    <a data-i18n="t0" href="path.html" data-n="01">Путь</a>
+    <a data-i18n="t1" href="method.html" data-n="02">Метод</a>
+    <a data-i18n="t2" href="cases.html" data-n="03">Кейсы</a>
+    <a data-i18n="t3" class="is-active" href="reviews.html" data-n="04">Отзывы</a>
+    <a href="reels.html" data-n="05">Reels</a>
+    <a data-i18n="t4" href="formats.html" data-n="06">Форматы</a>
+    <a href="faq.html" data-n="07">FAQ</a>
+  </nav>
+  <div class="lang" role="group" aria-label="Language"><button data-lang="en" class="is-on" aria-pressed="true">EN</button><button data-lang="ru" aria-pressed="false">RU</button><button data-lang="kz" aria-pressed="false">KZ</button><i class="lang__pill" aria-hidden="true"></i></div>
+  <a class="btn btn--ink btn--sm nav__cta magnetic" href="https://wa.me/77477490495?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5%2C%20%D0%9A%D1%83%D1%80%D0%B0%D0%BB%D0%B0%D0%B9!%20%D0%A5%D0%BE%D1%87%D1%83%20%D0%B7%D0%B0%D0%BF%D0%B8%D1%81%D0%B0%D1%82%D1%8C%D1%81%D1%8F%20%D0%BD%D0%B0%20%D0%BA%D0%BE%D0%BD%D1%81%D1%83%D0%BB%D1%8C%D1%82%D0%B0%D1%86%D0%B8%D1%8E" target="_blank" rel="noopener" data-cursor="WhatsApp"><span class="roll"><span data-i18n="t5">Записаться</span><span data-i18n="t5">Записаться</span></span><i class="arr">↗</i></a>
+  <button class="nav__burger" aria-label="Меню" aria-expanded="false"><span></span><span></span></button>
+  <!-- flight progress -->
+  <div class="flight" aria-hidden="true">
+    <div class="flight__track"><div class="flight__fill"></div></div>
+    <svg class="flight__plane" viewBox="0 0 24 24"><path d="M21 16v-2l-8-5V3.5a1.5 1.5 0 0 0-3 0V9l-8 5v2l8-2.5V19l-2 1.5V22l3.5-1 3.5 1v-1.5L13 19v-5.5z"/></svg>
+  </div>
+</header>
+<div class="menu" aria-hidden="true">
+  <a data-i18n="t0" href="path.html">Путь</a><a data-i18n="t1" href="method.html">Метод</a><a data-i18n="t2" href="cases.html">Кейсы</a><a data-i18n="t3" href="reviews.html">Отзывы</a><a href="reels.html">Reels</a><a data-i18n="t4" href="formats.html">Форматы</a><a href="faq.html">FAQ</a>
+  <a class="menu__wa" href="https://wa.me/77477490495" target="_blank" rel="noopener">WhatsApp ↗</a>
+</div>
+
+<main id="smooth">
+<!-- ================================================= 04 REVIEWS -->
+<section class="reviews" id="reviews" data-globe="reviews">
+  <div class="wrap">
+    <div class="sec-head sec-head--split">
+      <div>
+        <div class="stop mono"><span class="stop__n">Stop 04 / 08</span><span data-i18n="t3">Отзывы</span></div>
+        <h2 data-i18n="t80" class="h2 reveal-lines">Что пишут <em>после</em> урока.</h2>
+      </div>
+      <p data-i18n="t81" class="sec-head__aside">Оригиналы — на казахском и русском, как прислали. Перевод — ниже серым.</p>
+    </div>
+
+    <!-- highlights like Instagram -->
+    <div class="hl" role="list">
+      <button class="hl__item" data-story="reviews" role="listitem" data-cursor="смотреть"><span class="hl__ring"><img src="assets/img/stories/review-1.webp" alt=""></span><span data-i18n="t82">отзывы</span></button>
+      <button class="hl__item" data-story="levels" role="listitem" data-cursor="смотреть"><span class="hl__ring"><img src="assets/img/stories/res-b1.webp" alt=""></span><span data-i18n="c40">1 месяц = 1 уровень</span></button>
+      <button class="hl__item" data-story="results" role="listitem" data-cursor="смотреть"><span class="hl__ring"><img src="assets/img/stories/result-1.webp" alt=""></span><span data-i18n="t83">результаты</span></button>
+      <button class="hl__item" data-story="ielts" role="listitem" data-cursor="смотреть"><span class="hl__ring"><img src="assets/img/stories/ielts-2.webp" alt=""></span><span>ielts</span></button>
+      <button class="hl__item" data-story="lessons" role="listitem" data-cursor="смотреть"><span class="hl__ring"><img src="assets/img/stories/lesson-3.webp" alt=""></span><span data-i18n="t84">уроки</span></button>
+      <button class="hl__item" data-story="consult" role="listitem" data-cursor="смотреть"><span class="hl__ring"><img src="assets/img/stories/consult-2.webp" alt=""></span><span>консультация</span></button>
+      <button class="hl__item" data-story="path" role="listitem" data-cursor="смотреть"><span class="hl__ring"><img src="assets/img/stories/path-1.webp" alt=""></span><span data-i18n="t85">мой путь</span></button>
+      <button class="hl__item" data-story="hello" role="listitem" data-cursor="смотреть"><span class="hl__ring"><img src="assets/img/stories/hello-2.webp" alt=""></span><span>танысу</span></button>
+      <button class="hl__item" data-story="travel" role="listitem" data-cursor="смотреть"><span class="hl__ring"><img src="assets/img/stories/vietnam-3.webp" alt=""></span><span>Vietnam</span></button>
+    </div>
+
+    <div class="wall">
+      <figure class="bubble bubble--a">
+        <blockquote>«Мне очень понравился сегодняшний урок. Было много новых слов. А самое главное — я не знала, как толком писать эссе. Спасибо, что научили»</blockquote>
+        <figcaption class="mono">Зайнаб · WhatsApp · 16:45</figcaption>
+      </figure>
+      <figure class="bubble bubble--shot" data-story="reviews" data-cursor="читать"><img src="assets/img/stories/review-3.webp" alt="Скриншот отзыва ученика" loading="lazy"></figure>
+      <figure class="bubble bubble--b">
+        <blockquote lang="kk">«Құралай апай, курс прям күшті өтті. Бір ай зуылдап өте шықты, бірақ бізге көп нәрсе үйреттіңіз»</blockquote>
+        <p data-i18n="t86" class="bubble__tr">Курс был очень сильный. Месяц пролетел, но вы научили нас многому — и даёте мощную мотивацию.</p>
+        <figcaption data-i18n="t90" class="mono">Ученица потока · 21:38</figcaption>
+      </figure>
+      <figure class="bubble bubble--c">
+        <blockquote>«Сабақ өте ұнап жатыр, не скучно… Не жалею, что купила курс — обычно всегда жалела»</blockquote>
+        <p data-i18n="t87" class="bubble__tr">Раньше уроки были для меня скукой. А сейчас говорю, даже если ошибаюсь — потому что хочу донести мысль.</p>
+        <figcaption data-i18n="t91" class="mono">Студентка · 17:14</figcaption>
+      </figure>
+      <figure class="bubble bubble--shot" data-story="reviews" data-cursor="читать"><img src="assets/img/stories/review-1.webp" alt="Скриншоты отзывов в WhatsApp" loading="lazy"></figure>
+      <figure class="bubble bubble--a">
+        <blockquote lang="kk">«Барлығын тез және бірден есте сақтап қалатындай тілде түсіндіресіз… мотивацияны прям ерекше бересіз»</blockquote>
+        <p data-i18n="t88" class="bubble__tr">Объясняете так, что всё запоминается сразу. Speaking, reading, listening — открыла заново. А мотивация — от сердца к сердцу.</p>
+        <figcaption data-i18n="t92" class="mono">Ученица · 17:12</figcaption>
+      </figure>
+      <figure class="bubble bubble--b">
+        <blockquote lang="kk">«Рахмет, уақытыңызды бізге арнап, маңызды лайфхактармен бөліскеніңізге. Сабақ ұнады»</blockquote>
+        <p data-i18n="t89" class="bubble__tr">Спасибо, что уделили нам время и поделились важными лайфхаками. Урок понравился.</p>
+        <figcaption class="mono">Студент · WhatsApp</figcaption>
+      </figure>
+      <figure class="bubble bubble--c">
+        <blockquote lang="kk">«Өз ойымды еркін жеткіздім, қазақша ойламай ағылшынша жеткіздім, еш переводчиксіз»</blockquote>
+        <p class="bubble__tr" data-kz="">Свободно донесла свою мысль — сразу на английском, не думая на казахском и без переводчика.</p>
+        <figcaption class="mono" data-kz="Оқушы · стористен">Ученица · из сторис</figcaption>
+      </figure>
+      <figure class="bubble bubble--b">
+        <blockquote lang="kk">«Маған ағылшын тілі курсы қатты ұнады. Мұғалім бәрін түсінікті әрі жаймен түсіндіреді. Сабақтар қызықты өтті, ешқашан жалыққан жоқпын. Енді ағылшынша сөйлегенде қорықпаймын»</blockquote>
+        <p class="bubble__tr" data-kz="">Курс очень понравился. Объясняет понятно и спокойно, ни разу не было скучно. Теперь я не боюсь говорить по-английски.</p>
+        <figcaption class="mono" data-kz="Студент · Түркиядан">Студентка · из Турции</figcaption>
+      </figure>
+      <figure class="bubble bubble--a">
+        <blockquote>«Спасибо вам за эти полезные уроки. Прошло только два занятия, а я уже знаю два времени и много новых слов, составляю эссе — то, что я не любила больше всего в школьное время»</blockquote>
+        <p class="bubble__tr" data-kz="Екі сабақ қана өтті, ал мен екі шақты және көп жаңа сөзді білемін, эссе құрастырамын — мектепте ең ұнатпайтын нәрсем.">&nbsp;</p>
+        <figcaption class="mono" data-kz="Оқушы · 2 сабақтан кейін">Ученица · после 2 уроков</figcaption>
+      </figure>
+      <figure class="bubble bubble--a">
+        <blockquote lang="kk">«Бүгін Құралай апаймен бірінші сабақ болды және сонын өзінде басқа курстарда түсіне алмаған тақырыпты түсіндім. Сабақ соңында подкаст тыңдап, сонымен жұмыс жасадық»</blockquote>
+        <p class="bubble__tr" data-kz="">Уже на первом уроке поняла тему, которую не могла понять на других курсах. В конце слушали подкаст и работали с ним.</p>
+        <figcaption class="mono" data-kz="Оқушы · 1-сабақ">Ученица · первый урок</figcaption>
+      </figure>
+      <figure class="bubble bubble--b">
+        <blockquote>«Хочу поблагодарить за ваше терпение — вы всегда входили в положение. В моём случае это было важно: у меня двое маленьких детей. Огромное спасибо за знания и ту лёгкость, с которой вы объясняете. И за адекватные цены. Обязательно продолжу обучение с вами»</blockquote>
+        <p class="bubble__tr" data-kz="Шыдамдылығыңызға рахмет — менің екі кішкентай балам бар, бұл маған маңызды болды. Оқуды сізбен міндетті түрде жалғастырамын.">&nbsp;</p>
+        <figcaption class="mono" data-kz="Студент · екі баланың анасы">Студентка · мама двоих детей</figcaption>
+      </figure>
+      <figure class="bubble bubble--c">
+        <blockquote lang="kk">«Сабақ кайф өттік. Былай сөйлеп кетем деп ойламаппын»</blockquote>
+        <p class="bubble__tr" data-kz="">Урок прошёл на кайфе. Не думала, что вот так заговорю.</p>
+        <figcaption class="mono" data-kz="Оқушы · сабақтан кейін">Ученица · после урока</figcaption>
+      </figure>
+      <figure class="bubble bubble--a">
+        <blockquote lang="kk">«Маған сіздің курсыңыз өте қатты ұнады, прям топ 100000/10»</blockquote>
+        <p class="bubble__tr" data-kz="">Ваш курс мне очень понравился — прямо 100000 из 10.</p>
+        <figcaption class="mono" data-kz="Поток оқушысы">Ученица потока</figcaption>
+      </figure>
+    </div>
+
+    <a data-i18n="t93" href="reels.html" class="next mono" data-cursor="дальше">Следующая остановка: бесплатные уроки →</a>
+  </div>
+</section>
+
+<!-- ================================================= 08 CONTACT -->
+<section class="contact" id="contact" data-globe="contact">
+  <div class="wrap">
+    <div class="stop mono"><span class="stop__n">Stop 08 / 08</span><span data-i18n="t146">Пункт назначения</span></div>
+    <h2 class="contact__title"><span class="split-chars">Let’s</span> <em class="split-chars">talk.</em></h2>
+    <div class="contact__row">
+      <p data-i18n="t147" class="contact__lead">Первый шаг — одно сообщение. Остальное беру на себя: уровень, план, акцент.</p>
+      <a class="contact__orb magnetic" href="https://wa.me/77477490495?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5%2C%20%D0%9A%D1%83%D1%80%D0%B0%D0%BB%D0%B0%D0%B9!" target="_blank" rel="noopener" data-cursor="написать">
+        <svg viewBox="0 0 200 200" aria-hidden="true"><defs><path id="orbPath" d="M100,100 m-80,0 a80,80 0 1,1 160,0 a80,80 0 1,1 -160,0"/></defs><text><textPath href="#orbPath">WRITE ME ✦ ЖАЗЫҢЫЗ ✦ НАПИШИТЕ ✦ WRITE ME ✦ </textPath></text></svg>
+        <span>WhatsApp</span>
+      </a>
+    </div>
+  </div>
+  <footer class="foot wrap mono">
+    <span>© 2026 Quralai Rapilbekova · American English</span>
+    <span class="foot__links"><a href="https://www.instagram.com/rapilbekova_qr/" target="_blank" rel="noopener">Instagram</a><a href="https://wa.me/77477490495" target="_blank" rel="noopener">WhatsApp</a><a data-i18n="t148" href="#page-top">Наверх ↑</a></span>
+  </footer>
+</section>
+
+</main>
+
+<!-- ============ STORY VIEWER ============ -->
+<div class="viewer" id="viewer" aria-hidden="true" role="dialog" aria-label="Сторис">
+  <div class="viewer__bg" data-close></div>
+  <div class="viewer__card">
+    <div class="viewer__bars"></div>
+    <div class="viewer__head"><span class="viewer__avatar"><img src="assets/img/reels/DepjRBNNou3.webp" alt=""></span><b>rapilbekova_qr</b><span class="viewer__title mono"></span><button class="viewer__x" data-close aria-label="Закрыть">✕</button></div>
+    <img class="viewer__img" alt="">
+    <button class="viewer__prev" aria-label="Назад"></button><button class="viewer__next" aria-label="Вперёд"></button>
+  </div>
+</div>
+
+<!-- ============ VIDEO MODAL ============ -->
+<div class="vmodal" id="vmodal" aria-hidden="true" role="dialog" aria-label="Видео">
+  <div class="vmodal__bg" data-close></div>
+  <div class="vmodal__card">
+    <video controls playsinline></video>
+    <div class="vmodal__meta"><span class="vmodal__title serif-i"></span><a data-i18n="t149" class="mono vmodal__ig" target="_blank" rel="noopener">Открыть в Instagram ↗</a></div>
+    <button class="vmodal__x" data-close aria-label="Закрыть">✕</button>
+  </div>
+</div>
+
+<script src="assets/js/vendor/gsap.min.js"></script>
+<script src="assets/js/vendor/ScrollTrigger.min.js"></script>
+<script src="assets/js/vendor/lenis.min.js"></script>
+<script src="assets/js/i18n-en.js?v=8"></script>
+<script src="assets/js/i18n.js?v=8"></script>
+<script src="assets/js/main.js?v=8"></script>
+</body>
+</html>
